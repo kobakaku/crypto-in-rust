@@ -2,8 +2,8 @@
 
 The implementation of the cryptograhic algorithm in rust.
 
-## Encrypt the message with E-DES (Simplified Data Encryption Standard)
+## Encrypt the message with the specified cryptograhic algorithm
 
 ```bash
-cargo run -- sdes
+cargo run -- (sdes|aes|rsa)
 ```
