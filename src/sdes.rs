@@ -4,8 +4,8 @@
 //! - <https://www.geeksforgeeks.org/simplified-data-encryption-standard-set-2/>
 //!
 
-pub fn encrypt(key1: u8, key2: u8, plain_text: u8) -> u8 {
-    let ip = initial_permutation(plain_text);
+pub fn encrypt(key1: u8, key2: u8, input: u8) -> u8 {
+    let ip = initial_permutation(input);
     let fk_first = fk(key1, ip);
     let switch = switch(fk_first, 8);
     let fk_second = fk(key2, switch);
